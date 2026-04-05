@@ -31,6 +31,15 @@ namespace Doorstop
                 Harmony.DEBUG = true;
                 harmony.PatchCategory("beforeGameLoad");
                 Logger.Log("Harmony init complete");
+                
+                // Initialize cheat system
+                Objects.CheatManager.Init();
+                
+                // Create cheat GUI object
+                var go = new GameObject("CheatGUI");
+                go.AddComponent<CheatGUI>();
+                UnityEngine.Object.DontDestroyOnLoad(go);
+                Logger.Log("Cheat system initialized");
             }
             catch (Exception ex)
             {
