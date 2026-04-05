@@ -1,0 +1,48 @@
+```
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.out
+
+# Dependencies
+packages/
+lib/
+external/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+Thumbs.db
+.DS_Store
+
+# Configuration
+.vs/
+.vscode/
+.idea/
+
+# User-specific
+*.userprefs
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Compiled source
+*.compiled
+obj/
+bin/
+Debug/
+Release/
+x64/
+x86/
+```
